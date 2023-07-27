@@ -26,10 +26,10 @@ import com.netflix.http4.NFHttpClient;
 import com.netflix.http4.NFHttpClientFactory;
 import com.netflix.loadbalancer.Server;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.params.HttpConnectionParams;
+import org.apache.hc.core5.http.HttpResponse;
+import org.apache.hc.client5.http.classic.methods.HttpGet;
+import org.apache.hc.client5.http.classic.methods.HttpUriRequest;
+import org.apache.hc.core5.http.params.HttpConnectionParams;
 
 /**
  * An implementation of {@link IPrimeConnection} using Apache HttpClient.

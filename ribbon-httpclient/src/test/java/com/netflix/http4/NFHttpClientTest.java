@@ -20,16 +20,15 @@ package com.netflix.http4;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpHost;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-import org.apache.http.util.EntityUtils;
+import org.apache.hc.core5.http.io.entity.EntityUtils;
+import org.apache.hc.core5.http.HttpEntity;
+import org.apache.hc.core5.http.HttpHost;
+import org.apache.hc.core5.http.HttpResponse;
+import org.apache.hc.client5.http.ClientProtocolException;
+import org.apache.hc.client5.http.ResponseHandler;
+import org.apache.hc.client5.http.classic.HttpClient;
+import org.apache.hc.client5.http.classic.methods.HttpGet;
+import org.apache.hc.core5.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.junit.ClassRule;
 import org.junit.Ignore;
 import org.junit.Test;

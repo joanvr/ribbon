@@ -30,22 +30,22 @@ import java.util.Map;
 import java.util.Optional;
 
 import com.netflix.client.config.Property;
-import org.apache.http.HttpHost;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.UserTokenHandler;
-import org.apache.http.conn.ClientConnectionManager;
-import org.apache.http.conn.params.ConnRouteParams;
-import org.apache.http.conn.scheme.Scheme;
-import org.apache.http.conn.scheme.SchemeRegistry;
-import org.apache.http.conn.scheme.SchemeSocketFactory;
-import org.apache.http.conn.ssl.SSLSocketFactory;
-import org.apache.http.impl.client.AbstractHttpClient;
-import org.apache.http.impl.client.BasicCookieStore;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.HttpParams;
-import org.apache.http.protocol.HttpContext;
+import org.apache.hc.core5.http.HttpHost;
+import org.apache.hc.client5.http.UserTokenHandler;
+import org.apache.hc.client5.http.classic.HttpClient;
+import org.apache.hc.core5.http.conn.ClientConnectionManager;
+import org.apache.hc.core5.http.conn.params.ConnRouteParams;
+import org.apache.hc.core5.http.conn.scheme.Scheme;
+import org.apache.hc.core5.http.conn.scheme.SchemeRegistry;
+import org.apache.hc.core5.http.conn.scheme.SchemeSocketFactory;
+import org.apache.hc.core5.http.conn.ssl.SSLSocketFactory;
+import org.apache.hc.client5.http.cookie.BasicCookieStore;
+import org.apache.hc.client5.http.impl.classic.AbstractHttpClient;
+import org.apache.hc.client5.http.impl.classic.DefaultHttpClient;
+import org.apache.hc.core5.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.hc.core5.http.params.HttpConnectionParams;
+import org.apache.hc.core5.http.params.HttpParams;
+import org.apache.hc.core5.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -614,8 +614,8 @@ public class RestClient extends AbstractLoadBalancerAwareClient<HttpRequest, Htt
         int levelCount = 0;
         while (e != null && levelCount < 10) {
             if ((e instanceof SocketException)
-                    || ((e instanceof org.apache.http.conn.ConnectTimeoutException)
-                            && !(e instanceof org.apache.http.conn.ConnectionPoolTimeoutException))) {
+                    || ((e instanceof org.apache.hc.core5.http.conn.ConnectTimeoutException)
+                            && !(e instanceof org.apache.hc.core5.http.conn.ConnectionPoolTimeoutException))) {
                 return true;
             }
             e = e.getCause();
