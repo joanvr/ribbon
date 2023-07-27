@@ -24,11 +24,11 @@ package com.netflix.http4;
  */
 import java.io.IOException;
 
-import org.apache.http.HttpRequest;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.impl.client.DefaultHttpRequestRetryHandler;
-import org.apache.http.protocol.ExecutionContext;
-import org.apache.http.protocol.HttpContext;
+import org.apache.hc.core5.http.HttpRequest;
+import org.apache.hc.client5.http.classic.methods.HttpUriRequest;
+import org.apache.hc.client5.http.impl.classic.DefaultHttpRequestRetryHandler;
+import org.apache.hc.core5.http.protocol.ExecutionContext;
+import org.apache.hc.core5.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
