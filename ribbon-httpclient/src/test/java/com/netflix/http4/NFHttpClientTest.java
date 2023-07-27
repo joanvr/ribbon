@@ -21,15 +21,15 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpHost;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-import org.apache.http.util.EntityUtils;
+import org.apache.hc.httpclient5.HttpEntity;
+import org.apache.hc.httpclient5.HttpHost;
+import org.apache.hc.httpclient5.HttpResponse;
+import org.apache.hc.httpclient5.client.ClientProtocolException;
+import org.apache.hc.httpclient5.client.HttpClient;
+import org.apache.hc.httpclient5.client.ResponseHandler;
+import org.apache.hc.httpclient5.client.methods.HttpGet;
+import org.apache.hc.httpclient5.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.hc.httpclient5.util.EntityUtils;
 import org.junit.ClassRule;
 import org.junit.Ignore;
 import org.junit.Test;

@@ -21,10 +21,10 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.util.EntityUtils;
+import org.apache.hc.httpclient5.HttpResponse;
+import org.apache.hc.httpclient5.client.methods.HttpGet;
+import org.apache.hc.httpclient5.client.methods.HttpUriRequest;
+import org.apache.hc.httpclient5.util.EntityUtils;
 import org.junit.ClassRule;
 import org.junit.Test;
 

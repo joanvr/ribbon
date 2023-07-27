@@ -19,13 +19,13 @@ package com.netflix.http4;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.http.conn.ClientConnectionRequest;
-import org.apache.http.conn.routing.HttpRoute;
-import org.apache.http.conn.scheme.SchemeRegistry;
-import org.apache.http.impl.conn.tsccm.AbstractConnPool;
-import org.apache.http.impl.conn.tsccm.ConnPoolByRoute;
-import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-import org.apache.http.params.HttpParams;
+import org.apache.hc.httpclient5.conn.ClientConnectionRequest;
+import org.apache.hc.httpclient5.conn.routing.HttpRoute;
+import org.apache.hc.httpclient5.conn.scheme.SchemeRegistry;
+import org.apache.hc.httpclient5.impl.conn.tsccm.AbstractConnPool;
+import org.apache.hc.httpclient5.impl.conn.tsccm.ConnPoolByRoute;
+import org.apache.hc.httpclient5.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.hc.httpclient5.params.HttpParams;
 
 import com.google.common.annotations.VisibleForTesting;
 

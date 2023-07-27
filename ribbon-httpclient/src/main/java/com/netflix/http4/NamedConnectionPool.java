@@ -19,16 +19,16 @@ package com.netflix.http4;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.http.conn.ClientConnectionOperator;
-import org.apache.http.conn.ConnectionPoolTimeoutException;
-import org.apache.http.conn.params.ConnPerRoute;
-import org.apache.http.conn.routing.HttpRoute;
-import org.apache.http.impl.conn.tsccm.BasicPoolEntry;
-import org.apache.http.impl.conn.tsccm.ConnPoolByRoute;
-import org.apache.http.impl.conn.tsccm.PoolEntryRequest;
-import org.apache.http.impl.conn.tsccm.RouteSpecificPool;
-import org.apache.http.impl.conn.tsccm.WaitingThreadAborter;
-import org.apache.http.params.HttpParams;
+import org.apache.hc.httpclient5.conn.ClientConnectionOperator;
+import org.apache.hc.httpclient5.conn.ConnectionPoolTimeoutException;
+import org.apache.hc.httpclient5.conn.params.ConnPerRoute;
+import org.apache.hc.httpclient5.conn.routing.HttpRoute;
+import org.apache.hc.httpclient5.impl.conn.tsccm.BasicPoolEntry;
+import org.apache.hc.httpclient5.impl.conn.tsccm.ConnPoolByRoute;
+import org.apache.hc.httpclient5.impl.conn.tsccm.PoolEntryRequest;
+import org.apache.hc.httpclient5.impl.conn.tsccm.RouteSpecificPool;
+import org.apache.hc.httpclient5.impl.conn.tsccm.WaitingThreadAborter;
+import org.apache.hc.httpclient5.params.HttpParams;
 
 import com.google.common.base.Preconditions;
 import com.netflix.servo.annotations.DataSourceType;

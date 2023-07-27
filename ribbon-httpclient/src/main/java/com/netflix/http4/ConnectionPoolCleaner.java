@@ -18,7 +18,7 @@
 package com.netflix.http4;
 
 import com.netflix.client.config.Property;
-import org.apache.http.conn.ClientConnectionManager;
+import org.apache.hc.httpclient5.conn.ClientConnectionManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

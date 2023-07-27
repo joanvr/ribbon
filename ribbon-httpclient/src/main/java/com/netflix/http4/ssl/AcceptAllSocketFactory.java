@@ -20,8 +20,8 @@ package com.netflix.http4.ssl;
 import com.netflix.client.IClientConfigAware;
 import com.netflix.client.config.CommonClientConfigKey;
 import com.netflix.client.config.IClientConfig;
-import org.apache.http.conn.ssl.SSLSocketFactory;
-import org.apache.http.conn.ssl.TrustStrategy;
+import org.apache.hc.httpclient5.conn.ssl.SSLSocketFactory;
+import org.apache.hc.httpclient5.conn.ssl.TrustStrategy;
 
 import java.security.KeyManagementException;
 import java.security.KeyStoreException;

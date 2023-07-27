@@ -17,12 +17,12 @@
 */
 package com.netflix.loadbalancer;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
+import org.apache.hc.httpclient5.HttpResponse;
+import org.apache.hc.httpclient5.client.HttpClient;
+import org.apache.hc.httpclient5.client.methods.HttpGet;
+import org.apache.hc.httpclient5.client.methods.HttpUriRequest;
+import org.apache.hc.httpclient5.impl.client.DefaultHttpClient;
+import org.apache.hc.httpclient5.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

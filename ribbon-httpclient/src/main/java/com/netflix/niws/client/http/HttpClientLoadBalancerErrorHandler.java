@@ -5,11 +5,11 @@ import java.net.SocketException;
 import java.net.SocketTimeoutException;
 import java.util.List;
 
-import org.apache.http.ConnectionClosedException;
-import org.apache.http.NoHttpResponseException;
-import org.apache.http.conn.ConnectTimeoutException;
-import org.apache.http.conn.ConnectionPoolTimeoutException;
-import org.apache.http.conn.HttpHostConnectException;
+import org.apache.hc.httpclient5.ConnectionClosedException;
+import org.apache.hc.httpclient5.NoHttpResponseException;
+import org.apache.hc.httpclient5.conn.ConnectTimeoutException;
+import org.apache.hc.httpclient5.conn.ConnectionPoolTimeoutException;
+import org.apache.hc.httpclient5.conn.HttpHostConnectException;
 
 import com.google.common.collect.Lists;
 import com.netflix.client.ClientException;

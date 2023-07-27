@@ -24,8 +24,8 @@ import java.security.NoSuchAlgorithmException;
 
 import javax.net.ssl.SSLContext;
 
-import org.apache.http.conn.ssl.SSLSocketFactory;
-import org.apache.http.conn.ssl.X509HostnameVerifier;
+import org.apache.hc.httpclient5.conn.ssl.SSLSocketFactory;
+import org.apache.hc.httpclient5.conn.ssl.X509HostnameVerifier;
 
 import com.netflix.client.ssl.AbstractSslContextFactory;
 import com.netflix.client.ssl.ClientSslSocketFactoryException;
